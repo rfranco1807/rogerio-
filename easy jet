@@ -1,0 +1,16 @@
+Largura = float(input())
+Cumprimento = float(input())
+Altura = float (input())
+
+L =  45
+C =  56
+A =  25
+
+
+
+if Largura <= L and Cumprimento <= C  and Altura <= A:
+    
+    print("PERMITIDA")
+    
+else:
+    print("PROIBIDA")
