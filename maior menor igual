@@ -1,0 +1,12 @@
+A= int(input())
+B= int(input())
+       
+menor = A
+maior = B
+iguais = B == A
+if A>B:
+  print("A eh maior")
+if A<B:
+  print("B eh maior")
+if A==B:
+  print ("iguais")
