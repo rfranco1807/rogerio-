@@ -1,0 +1,7 @@
+N1 = int(input ())
+resultado = N1 % 2
+if resultado == 0:
+    print("O numero eh {} ele eh par". format(N1))
+
+else:
+    print("O numero eh {} e ele eh impar ".format(N1))
