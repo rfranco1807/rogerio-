@@ -1,0 +1,14 @@
+N1= float(input())
+salario1 = 1751.81
+salario2  = 2919.72
+salario3 = 5839.45
+teto= salario3
+
+if N1<salario1:
+    print("Desconto do INSS: R$ {:.2f}".format (N1*8/100))
+elif N1>salario1 and N1<=salario2:
+    print("Desconto do INSS: R$ {:.2f}".format (N1*9/100))
+elif N1>salario2 and N1<=salario3:
+    print ("Desconto do INSS: R$ {:.2f}".format ( N1*11/100))
+elif N1>teto:
+    print ("Desconto do INSS: R$ {:.2f}".format (teto*11/100))
