@@ -1,0 +1,55 @@
+valor = float(input())
+
+notas = float(0)
+cedatual = float(100.00)
+entrega = valor
+dinmoeda = "nota(s)"
+
+
+while True:
+    if cedatual <= entrega:
+        entrega = round(entrega, 2)
+        notas += float(1.00)
+        entrega -= cedatual
+    else:
+        if notas > 0:
+            entrega = round(entrega,2)
+            print("%d %s de R$ %4.2f"% (notas,dinmoeda,cedatual))
+        elif entrega == 0:
+            break
+        elif cedatual == 100:
+            cedatual = 50
+        elif cedatual == 50:
+            cedatual = 20
+        elif cedatual == 20:
+            cedatual = 10
+        elif cedatual == 10:
+            cedatual = 5
+        elif cedatual == 5:
+            cedatual = 2
+        elif cedatual == 2:
+            dinmoeda = "moeda(s)"
+            cedatual = 1
+        elif cedatual == 1:
+            dinmoeda = "moeda(s)"
+            cedatual = 0.5
+        elif cedatual == 0.5:
+            dinmoeda = "moeda(s)"
+            cedatual = 0.25
+        elif cedatual == 0.25:
+            dinmoeda = "moeda(s)"
+            cedatual = 0.10
+        elif cedatual == 0.10:
+            dinmoeda = "moeda(s)"
+            cedatual = 0.050
+        elif cedatual == 0.050:
+            dinmoeda = "moeda(s)"
+            cedatual = 0.010
+        elif cedatual > 0:
+            dinmoeda = "moeda(s)"
+            cedatual = 0.01
+        elif cedatual > 0:
+            dinmoeda = "moeda(s)"
+            cedatual = 0
+            break
+        notas = 0
