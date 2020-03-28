@@ -1,0 +1,7 @@
+E = int(input(""))
+if (E < 16):
+    print("nao eleitor")
+elif (E >= 18) and (E <= 65):
+    print("eleitor obrigatorio")
+else:
+    print("eleitor facultativo")
